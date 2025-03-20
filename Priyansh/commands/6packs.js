@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "6mui",
+  name: "عضلات",
   version: "1.0.0",
   hasPermssion: 0,
   credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
@@ -137,6 +137,6 @@ const fs = global.nodemodule["fs-extra"];
 "https://i.imgur.com/vn3vNsi.jpg",
 "https://i.imgur.com/aV4WVsq.jpg"
      ];
-     var callback = () => api.sendMessage({body:`Agar Tum Gay Nhi Ho To Ye Dekho Six Pack -.-`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"));  
+     var callback = () => api.sendMessage({body:`انضر الى عضلات هذا الشخص كن مثله -.-`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"));  
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/1.jpg")).on("close",() => callback());
    };
